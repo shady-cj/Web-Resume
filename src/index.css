@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500&family=Exo+2:wght@200;400;600;700;800&family=Inter:wght@200;300;400;500&family=Maven+Pro:wght@400;500&display=swap");
+
+:root {
+    --primary-color: #333c4e;
+    --primary-color-mild: #677897;
+    --secondary-color: #a89870;
+    --neutral-color: #e8e8e8;
+    --mild-color: #c4c3c3;
+    --title-font: "Exo 2", sans-serif;
+    --subtitle-font: "Maven Pro", sans-serif;
+    --general-font: "Inter", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--general-font);
+}
+body {
+    width: 100vw;
+    padding: 2rem 0;
+}
+p {
+    padding: 1rem 0;
+    font-size: 0.61rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--primary-color-mild);
+}
+
+.section__header-title {
+    padding: 0.58rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-color);
+}
+.section__header-title h2 {
+    font-size: 0.7rem;
+    color: var(--primary-color);
+    letter-spacing: 1.3px;
+}
+.section__main-content {
+    padding: 1.2rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 0.52rem;
+    }
+    body {
+        padding: 0;
+    }
 }

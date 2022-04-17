@@ -1,0 +1,84 @@
+.header-section {
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.header-section h1 {
+    font-family: var(--title-font);
+    color: var(--neutral-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.header__section-title {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.header__section-title .centering-line {
+    flex: 1;
+    height: 1px;
+    width: 30px;
+    background-color: var(--secondary-color);
+}
+.header__section-title h4 {
+    color: var(--secondary-color);
+    margin: 0px 1rem;
+    font-family: var(--subtitle-font);
+    font-weight: 500;
+    font-size: 0.88rem;
+}
+
+.header__section-contact {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.header__section-contact > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__section-contact svg {
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+}
+
+.header__section-contact > div > span {
+    font-size: 0.62rem;
+    font-weight: 500;
+    color: var(--mild-color);
+
+    /* margin-bottom: 0.5rem; */
+}
+.header__section-contact > div .contact-title {
+    color: var(--secondary-color);
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .header__section-contact > div > span {
+        font-size: 0.52rem;
+
+        /* margin-bottom: 0.5rem; */
+    }
+    .header-section h1 {
+        font-size: 1.5rem;
+    }
+    .header__section-title h4 {
+        font-size: 0.78rem;
+    }
+    .header__section-contact svg {
+        font-size: 0.65rem;
+    }
+}

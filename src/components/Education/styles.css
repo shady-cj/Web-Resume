@@ -1,0 +1,21 @@
+.education__section-content {
+    padding-left: 0.8rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.education__section-content-item {
+    width: 45%;
+}
+.education-item-title h3 {
+    color: var(--primary-color);
+    font-size: 0.5rem;
+}
+.education-item-title h3:first-child {
+    margin-bottom: 7px;
+}
+.education-item-description > p {
+    font-size: 0.52rem;
+    font-weight: 500;
+    padding: 0.4rem 0;
+}

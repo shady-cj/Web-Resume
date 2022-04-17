@@ -1,38 +1,40 @@
 .App {
-  text-align: center;
+    min-height: 100vh;
+    width: 40vw;
+    border: 1px solid var(--neutral-color);
+    border-radius: 1.2rem;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App main {
+    padding: 1rem 3rem;
+}
+.about-section {
+    border-top: 2px solid var(--primary-color);
+    min-height: 300px;
+    display: flex;
+}
+.about-section .skills {
+    width: 40%;
+    border-right: 2px solid var(--primary-color);
+    min-height: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-section .work-education {
+    flex: 1;
+}
+.work-education .education {
+    border-top: 2px solid var(--primary-color);
+}
+@media screen and (max-width: 1068px) {
+    .App {
+        width: 70vw;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 600px) {
+    .App {
+        width: 100vw;
+    }
 }
